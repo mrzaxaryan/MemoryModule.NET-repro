@@ -5,7 +5,7 @@ namespace reprolib
 {
     public class Reprolib
     {
-        [UnmanagedCallersOnly(EntryPoint = "addNumber", CallConvs = new[] { typeof(CallConvCdecl) })]
+        [UnmanagedCallersOnly(EntryPoint = "addNumber")]
         public static int AddNumber(int a, int b)
         {
             return a + b;
